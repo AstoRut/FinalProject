@@ -1,0 +1,23 @@
+body {
+  background-color: #333;
+}
+
+nav {
+  background-color: #ddd;
+  border-style: double;
+  margin: 2rem;
+  display: flex;
+  color: #02612d;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  padding: 10px;
+  margin-inline: 1rem;
+  display: flex;
+  border-style: dotted;
+  min-width: 75px;
+}

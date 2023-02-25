@@ -1,0 +1,15 @@
+{
+  "name": "final_project",
+  "version": "1.0.0",
+  "description": "final project consisting of Jesse's Top Travel Destinations",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync app -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.12"
+  }
+}
