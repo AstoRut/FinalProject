@@ -54,7 +54,7 @@ nav a:hover {
 }
 
 .plane {
-  padding: 3px;
+  padding: 4px;
   transform: rotate(-45deg) scale(0.5); /* animation */
   transition: all 1.5s ease; /* transition for animation */
 }
