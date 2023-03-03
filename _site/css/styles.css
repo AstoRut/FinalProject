@@ -31,6 +31,7 @@ nav li {
   margin-inline: 5px;
   display: flex;
   border-style: dotted;
+  top: 50%;
 }
 
 nav a {
@@ -120,6 +121,10 @@ footer a:hover {
   visibility: hidden;
 }
 
+.modal li {
+  margin: 1rem;
+}
+
 .modal a {
   color: #fff;
   text-decoration: none;
@@ -169,5 +174,8 @@ footer a:hover {
   footer {
     line-height: 0.1px;
     margin-top: 30px;
+  }
+  .modal li {
+    margin: 2px;
   }
 }
