@@ -1,0 +1,68 @@
+.pLayout {
+  margin: 15px;
+  text-align: left;
+  font-size: 18px;
+  color: #ddd;
+}
+
+h1 {
+  min-height: 45px;
+}
+
+h3 {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #02612d;
+}
+
+.recdiv {
+  text-align: left;
+  margin: auto;
+}
+
+.reclist {
+  background-color: #aaa;
+  box-shadow: -4px 0px 4px #02612d;
+  margin: 30px;
+  padding: 10px;
+}
+
+.image1,
+.image2 {
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+@media (min-width: 700px) {
+  nav,
+  h1 {
+    margin: 2rem;
+    text-align: left;
+  }
+  h1 {
+    padding-left: 2rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    text-align: center;
+    margin: -10px 32px 20px 32px;
+  }
+  main p {
+    min-height: 250px;
+  }
+  .maindiv {
+    margin-top: 40px;
+    padding-bottom: 30px;
+  }
+  nav a {
+    min-width: 75px;
+  }
+  aside {
+    background-color: #bbb;
+    margin-top: -20px;
+    padding-top: 20px;
+  }
+}

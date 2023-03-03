@@ -1,0 +1,89 @@
+body {
+  background-color: #ccc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 850px;
+  margin: auto;
+}
+
+.maindiv {
+  background-color: #888;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3%;
+}
+
+nav {
+  background-image: linear-gradient(to top, #999 0%, #ddd 90%, #063301 100%);
+  margin: 5px;
+  display: flex;
+  color: #02612d;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav a {
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  min-width: 65px;
+}
+
+main p {
+  margin: 15px;
+  text-align: left;
+  font-size: 18px;
+  color: #ddd;
+}
+
+h3 {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #02612d;
+}
+
+ul li {
+  text-align: left;
+  margin: auto;
+}
+
+.reclist {
+  background-color: #aaa;
+  box-shadow: -4px 0px 4px #02612d;
+  margin: 30px;
+  padding: 10px;
+}
+
+.image1,
+.image2 {
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+@media (min-width: 700px) {
+  nav,
+  h1 {
+    margin: 2rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    text-align: center;
+    margin: -10px 32px 32px 32px;
+  }
+  main p {
+    min-height: 250px;
+  }
+  .maindiv {
+    margin-top: 40px;
+    padding-bottom: 30px;
+  }
+  nav a {
+    min-width: 75px;
+  }
+  aside {
+    background-color: #bbb;
+    padding-top: 20px;
+  }
+}
