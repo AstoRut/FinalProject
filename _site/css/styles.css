@@ -9,16 +9,19 @@ body {
   background-color: #888;
   margin: 5px;
   padding: 5px;
+  margin-top: 20px;
   border-radius: 3%;
 }
 
 nav {
   background-image: linear-gradient(to bottom, #999 0%, #ddd 90%, #063301 100%);
   margin: 5px;
+  margin-top: 15px;
   display: flex;
   color: #02612d;
   flex-wrap: wrap;
   justify-content: center;
+  border-radius: 5%;
 }
 
 nav ul {
@@ -31,7 +34,6 @@ nav li {
   margin-inline: 5px;
   display: flex;
   border-style: none;
-  top: 50%;
 }
 
 nav a {
@@ -152,9 +154,12 @@ footer a:hover {
   .maindiv {
     margin-top: 40px;
     padding-bottom: 30px;
+    border-radius: 5%;
   }
   nav {
     justify-content: space-between;
+    margin-top: 2rem;
+    border-radius: 1%;
   }
   nav ul {
     padding-inline-start: 40px;
