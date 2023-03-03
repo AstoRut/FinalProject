@@ -12,20 +12,13 @@ body {
   border-radius: 3%;
 }
 
-h1,
-p {
-  margin: 10px;
-  text-align: center;
-  color: #ddd;
-}
-
 nav {
-  background-image: linear-gradient(to top, #999 0%, #ddd 90%, #063301 100%);
+  background-image: linear-gradient(to bottom, #999 0%, #ddd 90%, #063301 100%);
   margin: 5px;
   display: flex;
   color: #02612d;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 nav ul {
@@ -53,14 +46,22 @@ nav a:hover {
   text-decoration: underline;
 }
 
+h1 {
+  margin: 10px;
+  text-align: center;
+  color: #ddd;
+}
+
 .plane {
   padding: 4px;
   transform: rotate(-45deg) scale(0.5); /* animation */
-  transition: all 1.5s ease; /* transition for animation */
+  /*transition: all 1.5s ease; */ /* transition for animation */
+  opacity: 0.3;
 }
 
 .plane:hover {
   transform: rotate(0deg) scale(0.5);
+  opacity: 1;
 }
 
 main {
@@ -68,13 +69,19 @@ main {
   margin: 10px;
 }
 
-main p {
+.p1 {
   text-align: left;
   min-height: 200px;
   font-size: 18px;
 }
 
-aside {
+.p1 + p {
+  padding-top: 20px;
+  color: #02612d;
+  font-weight: bold;
+}
+
+.aside1 {
   display: block;
   float: right;
   margin-top: 5px;
@@ -82,7 +89,7 @@ aside {
   height: 230px;
 }
 
-aside p {
+.aside1 p {
   color: #000;
   font-size: 12px;
   margin-top: -5px;
@@ -130,7 +137,7 @@ footer a:hover {
   min-width: 120px;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 560px) {
   nav,
   h1,
   p,
@@ -140,6 +147,9 @@ footer a:hover {
   .maindiv {
     margin-top: 40px;
     padding-bottom: 30px;
+  }
+  nav {
+    justify-content: space-between;
   }
   nav ul {
     padding-inline-start: 40px;

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ destination }}</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles2.css" />
+  </head>
+
+  <body>
+    <div class="maindiv">
+      <header>
+        <nav>
+          <img
+            class="plane"
+            src="/img/plane.png"
+            alt="Silly airplane in the navigation bar"
+          />
+          <ul>
+            <li><a href="#" class="Americas">Americas</a></li>
+            <li><a href="#" class="Europe">Europe</a></li>
+            <li><a href="#" class="Asia">Asia</a></li>
+          </ul>
+        </nav>
+
+        <h1>{{ destination }}</h1>
+
+        <modal class="modal" id="modal"> </modal>
+      </header>
+
+      <main>
+        <article>
+          <p class="pLayout">
+            {{ excerpt }}
+          </p>
+          <picture>
+            <img class="image1" src="{{ images[1] }}" alt="{{ alts[0] }}" height="250" />
+          </picture>
+        </article>
+        <aside>
+          <picture>
+            <img class="image2" src="{{ images[0] }}" alt="{{ alts[1] }}" height="330" />
+          </picture>
+          <div class="reclist">
+            <h3>Recommended Attractions</h3>
+            <ul class="recdiv">
+              {% for item in attractions %}
+              <li>
+                {{ item }}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        <aside>
+      </main>
+    </div>
+
+    <script src="/js/data-object.js"></script>
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
