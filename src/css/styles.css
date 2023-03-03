@@ -30,13 +30,12 @@ nav li {
   padding: 10px;
   margin-inline: 5px;
   display: flex;
-  border-style: dotted;
+  border-style: none;
   top: 50%;
 }
 
 nav a {
   text-align: center;
-  text-decoration: none;
   color: #02612d;
   font-weight: bold;
   min-width: 65px;
@@ -160,7 +159,11 @@ footer a:hover {
   nav ul {
     padding-inline-start: 40px;
   }
+  nav li {
+    border-style: dotted;
+  }
   nav a {
+    text-decoration: none;
     min-width: 75px;
   }
   .plane {
