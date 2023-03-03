@@ -123,6 +123,7 @@ footer a:hover {
 
 .modal li {
   margin-top: 1rem;
+  margin-left: -10px;
 }
 
 .modal a {
@@ -139,7 +140,7 @@ footer a:hover {
   background-color: #02612d;
   padding-right: 10px;
   position: absolute;
-  min-width: 120px;
+  min-width: 100px;
 }
 
 @media (min-width: 560px) {
