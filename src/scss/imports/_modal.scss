@@ -1,0 +1,29 @@
+.modal {
+  visibility: hidden;
+
+  li {
+    margin-top: 1rem;
+    margin-left: -10px;
+
+    @media (min-width: 560px) {
+      margin: 2px;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+}
+
+.showmodal {
+  visibility: visible;
+  background-color: #02612d;
+  padding-right: 10px;
+  position: absolute;
+  min-width: 100px;
+}

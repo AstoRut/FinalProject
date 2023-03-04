@@ -1,3 +1,105 @@
+nav {
+  background-image: linear-gradient(to bottom, #999 0%, #ddd 90%, #063301 100%);
+  margin: 5px;
+  margin-top: 15px;
+  display: flex;
+  color: #02612d;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5%;
+}
+nav ul {
+  display: flex;
+  padding-inline-start: 2px;
+}
+nav li {
+  padding: 10px;
+  margin-inline: 5px;
+  display: flex;
+  border-style: none;
+}
+nav a {
+  text-align: center;
+  color: #02612d;
+  font-weight: bold;
+  min-width: 65px;
+}
+nav a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+@media (min-width: 560px) {
+  nav {
+    margin: 2rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border-radius: 1%;
+  }
+  nav ul {
+    padding-inline-start: 40px;
+  }
+  nav li {
+    border-style: dotted;
+  }
+  nav a {
+    text-decoration: none;
+    min-width: 75px;
+  }
+}
+
+.modal {
+  visibility: hidden;
+}
+.modal li {
+  margin-top: 1rem;
+  margin-left: -10px;
+}
+@media (min-width: 560px) {
+  .modal li {
+    margin: 2px;
+  }
+}
+.modal a {
+  color: #fff;
+  text-decoration: none;
+}
+.modal a:hover {
+  font-weight: bold;
+}
+
+.showmodal {
+  visibility: visible;
+  background-color: #02612d;
+  padding-right: 10px;
+  position: absolute;
+  min-width: 100px;
+}
+
+footer {
+  background-color: #02612d;
+  text-align: center;
+  color: #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px 5px 5px 5px;
+  margin: 10px;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-style: italic;
+}
+footer a:hover {
+  font-style: normal;
+}
+@media (min-width: 560px) {
+  footer {
+    margin: 2rem;
+    line-height: 0.1px;
+    margin-top: 30px;
+  }
+}
+
 body {
   background-color: #ccc;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -11,41 +113,6 @@ body {
   padding: 5px;
   margin-top: 20px;
   border-radius: 3%;
-}
-
-nav {
-  background-image: linear-gradient(to bottom, #999 0%, #ddd 90%, #063301 100%);
-  margin: 5px;
-  margin-top: 15px;
-  display: flex;
-  color: #02612d;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-radius: 5%;
-}
-
-nav ul {
-  display: flex;
-  padding-inline-start: 2px;
-}
-
-nav li {
-  padding: 10px;
-  margin-inline: 5px;
-  display: flex;
-  border-style: none;
-}
-
-nav a {
-  text-align: center;
-  color: #02612d;
-  font-weight: bold;
-  min-width: 65px;
-}
-
-nav a:hover {
-  color: #333;
-  text-decoration: underline;
 }
 
 h1 {
@@ -63,6 +130,7 @@ h1 {
 
 .plane:hover {
   transform: rotate(0deg) scale(0.5);
+  cursor: pointer;
   opacity: 1;
 }
 
@@ -98,78 +166,19 @@ main {
   margin-left: 13px;
 }
 
-footer {
-  background-color: #02612d;
-  text-align: center;
-  color: #ddd;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  border-radius: 5px 5px 5px 5px;
-  margin: 10px;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-  font-style: italic;
-}
-
-footer a:hover {
-  font-style: normal;
-}
-
-.modal {
-  visibility: hidden;
-}
-
-.modal li {
-  margin-top: 1rem;
-  margin-left: -10px;
-}
-
-.modal a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.modal a:hover {
-  font-weight: bold;
-}
-
-.showmodal {
-  visibility: visible;
-  background-color: #02612d;
-  padding-right: 10px;
-  position: absolute;
-  min-width: 100px;
+.plane2 {
+  cursor: pointer;
 }
 
 @media (min-width: 560px) {
-  nav,
   h1,
-  p,
-  footer {
+  p {
     margin: 2rem;
   }
   .maindiv {
     margin-top: 30px;
     border-radius: 5%;
     margin-bottom: 30px;
-  }
-  nav {
-    justify-content: space-between;
-    margin-top: 2rem;
-    border-radius: 1%;
-  }
-  nav ul {
-    padding-inline-start: 40px;
-  }
-  nav li {
-    border-style: dotted;
-  }
-  nav a {
-    text-decoration: none;
-    min-width: 75px;
   }
   .plane {
     transform: rotate(-45deg) scale(1);
@@ -180,11 +189,6 @@ footer a:hover {
   .mainpic {
     margin-right: 25px;
   }
-  footer {
-    line-height: 0.1px;
-    margin-top: 30px;
-  }
-  .modal li {
-    margin: 2px;
-  }
 }
+
+/*# sourceMappingURL=styles.css.map */

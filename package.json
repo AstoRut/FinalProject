@@ -4,13 +4,17 @@
   "description": "final project consisting of Jesse's Top Travel Destinations",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve"
+    "sass": "sass  src/scss/styles.scss src/css/styles.css --watch --source-map",
+    "11ty": "eleventy --serve",
+    "start": "concurrently \"npm run sass\" \"npm run 11ty \" "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
-    "browser-sync": "^2.27.12"
+    "browser-sync": "^2.27.12",
+    "concurrently": "^7.6.0",
+    "sass": "^1.58.3"
   }
 }

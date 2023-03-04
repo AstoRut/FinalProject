@@ -1,0 +1,25 @@
+footer {
+  background-color: #02612d;
+  text-align: center;
+  color: #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px 5px 5px 5px;
+  margin: 10px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+  }
+
+  a:hover {
+    font-style: normal;
+  }
+
+  @media (min-width: 560px) {
+    margin: 2rem;
+    line-height: 0.1px;
+    margin-top: 30px;
+  }
+}

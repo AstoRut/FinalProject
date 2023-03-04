@@ -14,20 +14,28 @@ function goToRandomDestination() {
 
 function handleClicks(e) {
   let rect = e.target.getBoundingClientRect();
+
   if (
     e.target.matches(".Americas") ||
     e.target.matches(".Europe") ||
     e.target.matches(".Asia")
   ) {
+    if (mdl.innerHTML == region[e.target.innerHTML]) {
+      // close modal if it's already open for this item
+      mdl.innerHTML = "";
+      mdl.classList.remove("showmodal");
+      return;
+    }
     mdl.style.left = rect.left - 12 + "px";
     mdl.style.top = rect.top + window.scrollY + 37 + "px";
-    mdl.innerHTML = region[e.target.innerText];
+    mdl.innerHTML = region[e.target.innerHTML];
     mdl.classList.add("showmodal");
   } else if (e.target.matches(".plane")) {
     window.location = "/";
   } else if (e.target.matches(".plane2")) {
     goToRandomDestination();
   } else {
+    // clicking elsewhere, close the modal
     mdl.innerHTML = "";
     mdl.classList.remove("showmodal");
   }

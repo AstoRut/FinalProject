@@ -1,0 +1,90 @@
+body {
+  background-color: #ccc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 850px;
+  margin: auto;
+}
+
+.maindiv {
+  background-color: #888;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 3%;
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+  color: #ddd;
+}
+
+.plane {
+  padding: 4px;
+  transform: rotate(-45deg) scale(0.5); /* animation */
+  /*transition: all 1.5s ease; */ /* transition for animation */
+  opacity: 0.3;
+}
+
+.plane:hover {
+  transform: rotate(0deg) scale(0.5);
+  cursor: pointer;
+  opacity: 1;
+}
+
+main {
+  text-align: center;
+  margin: 10px;
+}
+
+.p1 {
+  text-align: left;
+  min-height: 200px;
+  font-size: 18px;
+}
+
+.p1 + p {
+  padding-top: 20px;
+  color: #02612d;
+  font-weight: bold;
+}
+
+.aside1 {
+  display: block;
+  float: right;
+  margin-top: 5px;
+  margin-inline-start: 10px;
+  height: 230px;
+}
+
+.aside1 p {
+  color: #000;
+  font-size: 12px;
+  margin-top: -5px;
+  margin-left: 13px;
+}
+
+.plane2 {
+  cursor: pointer;
+}
+
+@media (min-width: 560px) {
+  h1,
+  p {
+    margin: 2rem;
+  }
+  .maindiv {
+    margin-top: 30px;
+    border-radius: 5%;
+    margin-bottom: 30px;
+  }
+  .plane {
+    transform: rotate(-45deg) scale(1);
+  }
+  .plane:hover {
+    transform: rotate(0deg) scale(1.1);
+  }
+  .mainpic {
+    margin-right: 25px;
+  }
+}
