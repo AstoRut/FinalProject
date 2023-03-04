@@ -152,9 +152,9 @@ footer a:hover {
     margin: 2rem;
   }
   .maindiv {
-    margin-top: 40px;
-    padding-bottom: 30px;
+    margin-top: 30px;
     border-radius: 5%;
+    margin-bottom: 30px;
   }
   nav {
     justify-content: space-between;

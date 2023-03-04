@@ -11,20 +11,23 @@ h1 {
 
 h3 {
   font-size: 18px;
-  text-decoration: underline;
   color: #02612d;
 }
 
 .recdiv {
   text-align: left;
   margin: auto;
+  padding-bottom: 1rem;
 }
 
 .reclist {
   background-color: #aaa;
   box-shadow: -4px 0px 4px #02612d;
   margin: 30px;
-  padding: 10px;
+}
+
+.reclist h3{
+  padding-top: 10px;
 }
 
 .image1,
@@ -54,15 +57,18 @@ h3 {
     min-height: 250px;
   }
   .maindiv {
-    margin-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
   nav a {
     min-width: 75px;
   }
   aside {
     background-color: #bbb;
-    margin-top: -20px;
+    margin-top: -65px;
+  }
+  .image2 {
     padding-top: 20px;
   }
+  .reclist {
+    margin-bottom: 90px;
 }

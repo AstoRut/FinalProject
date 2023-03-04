@@ -8,28 +8,20 @@ function goToRandomDestination() {
   let max = destinations.length;
   let rand = Math.floor(Math.random() * max);
   let dest = destinations[rand];
-  console.log(dest);
   dest = dest.replace(" ", "_"); // Costa Rica -> Costa_Rica
-  console.log(dest);
   window.location = `/pages/${dest}`;
 }
 
 function handleClicks(e) {
   let rect = e.target.getBoundingClientRect();
-  if (e.target.matches(".Americas")) {
-    mdl.style.left = rect.left - 13 + "px";
-    mdl.style.top = rect.top + 37 + "px";
-    mdl.innerHTML = region.Americas;
-    mdl.classList.add("showmodal");
-  } else if (e.target.matches(".Europe")) {
-    mdl.style.left = rect.left - 13 + "px";
-    mdl.style.top = rect.top + 37 + "px";
-    mdl.innerHTML = region.Europe;
-    mdl.classList.add("showmodal");
-  } else if (e.target.matches(".Asia")) {
-    mdl.style.left = rect.left - 13 + "px";
-    mdl.style.top = rect.top + 37 + "px";
-    mdl.innerHTML = region.Asia;
+  if (
+    e.target.matches(".Americas") ||
+    e.target.matches(".Europe") ||
+    e.target.matches(".Asia")
+  ) {
+    mdl.style.left = rect.left - 12 + "px";
+    mdl.style.top = rect.top + window.scrollY + 37 + "px";
+    mdl.innerHTML = region[e.target.innerText];
     mdl.classList.add("showmodal");
   } else if (e.target.matches(".plane")) {
     window.location = "/";
