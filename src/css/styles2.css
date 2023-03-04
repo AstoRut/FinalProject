@@ -26,7 +26,7 @@ h3 {
   margin: 30px;
 }
 
-.reclist h3{
+.reclist h3 {
   padding-top: 10px;
 }
 
@@ -71,4 +71,5 @@ h3 {
   }
   .reclist {
     margin-bottom: 90px;
+  }
 }
