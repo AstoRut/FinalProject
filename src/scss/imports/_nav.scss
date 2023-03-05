@@ -1,12 +1,10 @@
 nav {
   background-image: linear-gradient(to bottom, #999 0%, #ddd 90%, #063301 100%);
-  margin: 5px;
-  margin-top: 15px;
+  margin: 5px -5px 0px -5px;
   display: flex;
   color: #02612d;
   flex-wrap: wrap;
   justify-content: center;
-  border-radius: 5%;
 
   ul {
     display: flex;
